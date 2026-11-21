@@ -1,0 +1,60 @@
+/* Styling only: A1111 still owns form controls and generation state. */
+[id^="tcs-"] .tab-nav { border-bottom: 1px solid var(--border-color-primary, #7774); }
+[id^="tcs-"] .tabitem { padding-top: .5rem; }
+[id^="tcs-"] label { letter-spacing: .01em; }
+
+/* CLIP Lab 2.0. Scoped: never style A1111 controls or other extensions. */
+.tcs-lab {--tcs-accent:#119b91;--tcs-blue:#3868db;--tcs-warn:#bd8124;
+ --tcs-border:var(--border-color-primary,#92929255);--tcs-surface:var(--block-background-fill,var(--background-fill-secondary,#88888813));
+ color:var(--body-text-color,inherit);font-size:14px;max-width:100%;overflow-wrap:anywhere}
+.tcs-lab *{box-sizing:border-box}
+.tcs-lab-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 18px;border:1px solid var(--tcs-border);border-radius:13px;background:var(--tcs-surface)}
+.tcs-lab-header h3{font-size:23px!important;line-height:1.2;margin:3px 0!important}
+.tcs-lab-header p{margin:3px 0 0!important;opacity:.72}
+.tcs-lab-eyebrow{color:var(--tcs-accent);font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}
+.tcs-lab-status{display:inline-block;border:1px solid var(--tcs-border);padding:7px 11px;border-radius:20px;font-size:12px}
+.tcs-lab-meta,.tcs-lab-stats{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+.tcs-lab-meta>span,.tcs-lab-stats>span{border:1px solid var(--tcs-border);border-radius:7px;padding:5px 9px;background:var(--tcs-surface);font-size:12px}
+.tcs-lab-note,.tcs-lab-help,.tcs-lab-footer{opacity:.78;font-size:12px;line-height:1.55;margin:11px 0}
+.tcs-lab-section{background:var(--tcs-surface);border:1px solid var(--tcs-border);border-radius:12px;padding:13px 15px;margin:12px 0;min-width:0}
+.tcs-lab-section>summary{font-size:16px;font-weight:700;cursor:pointer;padding:5px 2px;list-style:revert}
+.tcs-lab-stream{border-top:1px solid var(--tcs-border);padding-top:9px;margin:12px 0}
+.tcs-lab-stream>summary{font-size:14px;font-weight:650;cursor:pointer}
+.tcs-lab h4{font-size:13px!important;margin:13px 0 6px!important}
+.tcs-lab button{cursor:pointer;color:inherit;font-family:inherit}
+.tcs-lab .tcs-lab-timeline{display:flex;gap:3px;height:55px;width:100%;margin:14px 0;min-width:0}
+.tcs-lab .tcs-lab-phase{min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--tcs-accent);color:white;border:0;border-radius:6px;font-weight:700;padding:6px 2px;line-height:1.15;overflow:hidden}
+.tcs-lab .tcs-lab-phase:nth-child(even){background:var(--tcs-blue)}
+.tcs-lab .tcs-lab-phase small{font-weight:400;font-size:10px;white-space:nowrap}
+.tcs-lab .tcs-lab-phase.active{outline:3px solid var(--body-text-color,#fff);outline-offset:-5px}
+.tcs-lab-layer-current{padding:9px 11px;border:1px solid var(--tcs-border);border-radius:9px;font-size:13px;line-height:1.7;margin-bottom:12px}
+.tcs-lab-two-stacks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tcs-lab-layer-column{border:1px solid var(--tcs-border);border-radius:9px;padding:11px;min-width:0}
+.tcs-lab-layer-stack{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.tcs-lab-layer{background:var(--tcs-border);border-radius:4px;min-height:30px;text-align:center;line-height:30px;color:inherit;opacity:.85}
+.tcs-lab-layer small{font-size:10px;line-height:30px}
+.tcs-lab-layer.chosen{background:var(--tcs-accent);color:white;opacity:1;font-weight:700}
+.tcs-lab-layer.input{border:1px dashed var(--tcs-border);background:transparent}
+.tcs-lab-chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
+.tcs-lab .tcs-lab-token{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:2px;border:1px solid var(--tcs-border);border-radius:7px;background:var(--tcs-surface);padding:6px 9px;min-width:55px;max-width:170px;text-align:left;overflow-wrap:anywhere}
+.tcs-lab-fragment{font-family:ui-monospace,Consolas,monospace;font-size:12px}
+.tcs-lab-token small{font-size:10px;opacity:.7;white-space:nowrap}
+.tcs-lab .tcs-lab-token.up{border-bottom:3px solid #dca43c}
+.tcs-lab .tcs-lab-token.down{border-bottom:3px solid var(--tcs-blue)}
+.tcs-lab .tcs-lab-token.ti{border-bottom:3px solid #b657d1}
+.tcs-lab .tcs-lab-token.selected,.tcs-lab .tcs-lab-slot.selected{outline:2px solid var(--tcs-accent);outline-offset:1px}
+.tcs-lab-chunk{margin:12px 0;border:1px solid var(--tcs-border);border-radius:8px;padding:10px;min-width:0}
+.tcs-lab-chunk-title{display:flex;justify-content:space-between;gap:8px;margin-bottom:7px;font-size:12px}
+.tcs-lab-slot-grid{display:grid;grid-template-columns:repeat(25,minmax(0,1fr));gap:3px;min-width:0}
+.tcs-lab .tcs-lab-slot{width:100%;min-width:0;display:block;height:17px;padding:0;border:1px solid var(--tcs-border);border-radius:3px;background:var(--tcs-accent)}
+.tcs-lab .tcs-lab-slot.up{background:#dca43c}
+.tcs-lab .tcs-lab-slot.down{background:var(--tcs-blue)}
+.tcs-lab .tcs-lab-slot.ti{background:#b657d1}
+.tcs-lab .tcs-lab-slot.pad{background:var(--tcs-border);opacity:.35}
+.tcs-lab-detail{padding:12px;border:1px solid var(--tcs-accent);border-radius:8px;margin:15px 0;background:var(--tcs-surface);min-height:42px;font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere}
+.tcs-lab-table-scroll{max-height:320px;overflow:auto;margin-top:10px;border:1px solid var(--tcs-border);border-radius:8px}
+.tcs-lab table{width:100%;border-collapse:collapse;font-size:12px}
+.tcs-lab th,.tcs-lab td{text-align:left;border-bottom:1px solid var(--tcs-border);padding:5px 8px;overflow-wrap:anywhere}
+.tcs-lab th{position:sticky;top:0;background:var(--tcs-surface);backdrop-filter:blur(6px)}
+.tcs-lab .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+@media(max-width:700px){.tcs-lab-two-stacks{grid-template-columns:1fr}.tcs-lab-section{padding:11px 9px}.tcs-lab-slot-grid{gap:2px}.tcs-lab .tcs-lab-slot{height:15px}.tcs-lab-header{padding:12px}.tcs-lab-header h3{font-size:20px!important}}
